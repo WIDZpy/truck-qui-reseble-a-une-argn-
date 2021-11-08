@@ -9,6 +9,14 @@ N = 5
 V1 = (C/2)/(tan(360/(2*N)))
 V2 = (2)/(tan(360/(2*N)))
 V3 = (C/2)/(sin(360/(N*2)))
+
+sa = ('efsffzdv' , 'zgzezegzez')
+print(type(sa))
+
+rar = ' § '.join(sa)
+print(rar)
+
+
 #print(asin(V3))
 print(V1)
 print(V2)

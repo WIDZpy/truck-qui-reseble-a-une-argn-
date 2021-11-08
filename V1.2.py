@@ -1,6 +1,5 @@
 import turtle
 from math import *
-
 tu = turtle
 nombre_de_som = 20
 cote = 10
