@@ -1,11 +1,14 @@
 import turtle
 from math import *
+import random
 class programe:
     def __init__(self):
         turtle.screensize(100,100)
+        self.color = ['white']
         self.t = turtle
+        self.t.delay(1)
         self.t.speed(0)
-        self.t.pensize(2)
+        self.t.pensize(50)
         self.t.up()
         self.t.hideturtle()
         self.t.bgcolor('black')
@@ -22,7 +25,9 @@ class programe:
             self.t.fd(self.l)
             self.t.right(360 / self.nds)
     def tre(self):
-        self.t.pensize(4)
+
+        self.t.color('white')
+        self.t.pensize(1)
         self.t.up()
         self.t.setpos(0, 0)
         self.t.down()
@@ -35,6 +40,8 @@ class programe:
 
     def run(self):
         for loop in range(self.couches):
+            self.color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])]
+            self.t.color(self.color)
             self.l = self.L + (self.L*10)/self.nds * loop
             self.t.sety(self.calcule())
             self.t.down()
@@ -43,9 +50,12 @@ class programe:
             self.t.seth(0)
             self.t.sety(0)
 
-        self.tre()
+        #self.tre()
         self.t.mainloop()
 
 self = programe()
+
+
+
 self.run()
 
