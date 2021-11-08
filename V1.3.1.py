@@ -25,7 +25,6 @@ class programe:
             self.t.fd(self.l)
             self.t.right(360 / nds)
     def tre(self,nds,L):
-
         self.t.color('white')
         self.t.pensize(1)
         self.t.up()
@@ -37,7 +36,6 @@ class programe:
             self.l = (L + (self.l * 10) / nds) * (self.couches)
             self.t.fd(l)
             self.t.right(360 / nds)
-
     def run(self,nds,L):
         for loop in range(self.couches):
             self.color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])]
@@ -50,21 +48,13 @@ class programe:
             self.t.seth(0)
             self.t.sety(0)
         self.t.clear()
-
         #self.tre()
-
         #self.t.down
     def mainloop(self):
         self.t.mainloop()
-
 self = programe()
 V3= 2
 while V3 <= 10:
     self.run(V3,10)
-
-
-
-
     V3 += 1
-
 self.mainloop()
