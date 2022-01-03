@@ -1,2 +1,2 @@
-# truck-qui-reseble-a-une-argn-
-je vous conseiile d'utiliser la vertion la plus résente
+# Truc-qui-resemble-a-une-araignée-
+Je vous conseille d'utiliser la version la plus récente.
